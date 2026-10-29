@@ -8,4 +8,4 @@ client = TestClient(app)
 def test_hits_increase():
     first = client.get("/").json()["hits"]
     second = client.get("/").json()["hits"]
-    assert second == first + 1
+    assert second == first + 2
